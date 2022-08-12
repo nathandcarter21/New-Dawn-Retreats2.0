@@ -29,60 +29,62 @@ export default function Retreats() {
 			</Navbar>
 
 			<main className="container-fluid pr-0 mt-4">
-				<div class="row text-center">
-					<div class="contourBtm pb-5">
+				<div className="row text-center">
+					<div className="contourBtm pb-5">
 						<h1>Upcoming Retreats</h1>
-						<h3 class="my-2">~Sacred Rest & Restorative Experiences~</h3>
+						<h3 className="my-2">~Sacred Rest & Restorative Experiences~</h3>
 					</div>
 				</div>
-				<div class="row text-center align-items-center contourBtm">
-					<div class="col-lg-7 pb-5 py-lg-5 px-0">
-						<img src="/sunset3.jpg" alt="" class="img-fluid" />
+				<div className="row text-center align-items-center contourBtm">
+					<div className="col-lg-7 pb-5 py-lg-5 px-0">
+						<img src="/sunset3.jpg" alt="" className="img-fluid" />
 					</div>
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
-						<h3 class="my-0">Summerlake Hotsprings Retreat Autumn 2022</h3>
-						<p class="my-0 my-3">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
+						<h3 className="my-0">Summerlake Hotsprings Retreat Autumn 2022</h3>
+						<p className="my-0 my-3">
 							More information for this retreat coming soon!
 						</p>
-						<a href="/retreats/summer_lake" class="btn pinkBtn btn-lg">
+						<a href="/retreats/summer_lake" className="btn pinkBtn btn-lg">
 							View Details
 						</a>
 					</div>
 				</div>
 
-				<div class="row text-center align-items-center">
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-centered order-2 order-lg-1">
-						<h3 class="my-0">Sacred Rest Mexico 2022</h3>
-						<p class="my-0 my-3">
+				<div className="row text-center align-items-center">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered order-2 order-lg-1">
+						<h3 className="my-0">Sacred Rest Mexico 2022</h3>
+						<p className="my-0 my-3">
 							More information for this retreat coming soon!
 						</p>
-						{/* <a href="/retreats/mexico" class="btn pinkBtn btn-lg">View Details</a> */}
+						{/* <a href="/retreats/mexico" className="btn pinkBtn btn-lg">View Details</a> */}
 					</div>
 
-					<div class="col-lg-7 px-0 pb-5 py-lg-5 order-1 order-lg-2">
+					<div className="col-lg-7 px-0 pb-5 py-lg-5 order-1 order-lg-2">
 						<img
 							src="https://images.unsplash.com/photo-1611222566360-ef1f0a8c6451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWV4aWNvJTIwYmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
 							alt=""
-							class="img-fluid"
+							className="img-fluid"
 						/>
 					</div>
 				</div>
 			</main>
-			<footer class="footer py-3 mt-auto contourTop">
-				<div class=" container-fluid">
-					<div class="row">
-						<div class="col-4 text-center btn copyright">
-							<span class="text-muted">New Dawn Retreats 2022</span>
+			<footer className="footer py-3 mt-auto contourTop">
+				<div className=" container-fluid">
+					<div className="row">
+						<div className="col-4 text-center btn copyright">
+							<span className="text-muted">New Dawn Retreats 2022</span>
 						</div>
-						<div class="col-4 text-center">
+						<div className="col-4 text-center">
 							<a
 								href="https://www.instagram.com/newdawnretreats/"
-								class="btn text-muted">
-								<i class="bi bi-instagram"> New Dawn Retreats</i>
+								className="btn text-muted">
+								<i className="bi bi-instagram"> New Dawn Retreats</i>
 							</a>
 						</div>
-						<div class="col-4 text-center">
-							<a href="mailto:jnlcarter5@gmail.com" class="btn text-muted mail">
+						<div className="col-4 text-center">
+							<a
+								href="mailto:jnlcarter5@gmail.com"
+								className="btn text-muted mail">
 								Website developed by Nathan Carter
 							</a>
 						</div>

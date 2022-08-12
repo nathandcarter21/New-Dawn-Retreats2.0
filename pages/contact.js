@@ -30,71 +30,73 @@ export default function Contact() {
 			</Navbar>
 
 			<main className="container-fluid pr-0 mt-4">
-				<div class="row">
-					<div class="col-8 offset-2 text-center">
+				<div className="row">
+					<div className="col-8 offset-2 text-center">
 						<h1>Send Us A Message!</h1>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-8 offset-2 col-lg-6 offset-lg-3">
+				<div className="row">
+					<div className="col-8 offset-2 col-lg-6 offset-lg-3">
 						<form
 							id="form"
-							action="/contact"
+							action="/api/hello"
 							method="post"
-							class="validated-form"
-							novalidate>
+							className="validated-form"
+							noValidate>
 							<div>
-								<div class="mb-3">
-									<label class="form-label" for="name">
+								<div className="mb-3">
+									<label className="form-label" htmlFor="name">
 										Name
 									</label>
 									<input
-										class="form-control"
+										className="form-control"
 										type="text"
 										id="name"
-										name="sender[name]"
+										name="name"
 										placeholder=""
 										required
 									/>
-									<div class="valid-feedback">Looks Good!</div>
-									<div class="invalid-feedback">Please enter a name</div>
+									<div className="valid-feedback">Looks Good!</div>
+									<div className="invalid-feedback">Please enter a name</div>
 								</div>
 
-								<div class="mb-3">
-									<label class="form-label" for="email">
+								<div className="mb-3">
+									<label className="form-label" htmlFor="email">
 										Email
 									</label>
 									<input
-										class="form-control"
+										className="form-control"
 										type="email"
 										id="email"
-										name="sender[email]"
+										name="email"
 										placeholder=""
 										required
 									/>
-									<div class="valid-feedback">Looks Good!</div>
-									<div class="invalid-feedback">Please enter a valid email</div>
+									<div className="valid-feedback">Looks Good!</div>
+									<div className="invalid-feedback">
+										Please enter a valid email
+									</div>
 								</div>
 
-								<div class="mb-3">
-									<label class="form-label" for="message">
+								<div className="mb-3">
+									<label className="form-label" htmlFor="message">
 										Message
 									</label>
 
 									<textarea
-										class="form-control"
+										className="form-control"
 										type="text-area"
 										id="message"
-										name="sender[message]"
+										name="message"
 										rows="10"
 										required></textarea>
 
-									<div class="valid-feedback">Looks Good!</div>
-									<div class="invalid-feedback">Please enter a message</div>
+									<div className="valid-feedback">Looks Good!</div>
+									<div className="invalid-feedback">Please enter a message</div>
 								</div>
 
-								<div class="mb-3 text-center">
-									<button class="btn btn-lg pinkBtn submit" id="send">
+								<div className="mb-3 text-center">
+									<button className="btn btn-lg pinkBtn submit" id="send">
 										Send Message
 									</button>
 								</div>
@@ -103,21 +105,23 @@ export default function Contact() {
 					</div>
 				</div>
 			</main>
-			<footer class="footer py-3 mt-auto contourTop">
-				<div class=" container-fluid">
-					<div class="row">
-						<div class="col-4 text-center btn copyright">
-							<span class="text-muted">New Dawn Retreats 2022</span>
+			<footer className="footer py-3 mt-auto contourTop">
+				<div className=" container-fluid">
+					<div className="row">
+						<div className="col-4 text-center btn copyright">
+							<span className="text-muted">New Dawn Retreats 2022</span>
 						</div>
-						<div class="col-4 text-center">
+						<div className="col-4 text-center">
 							<a
 								href="https://www.instagram.com/newdawnretreats/"
-								class="btn text-muted">
-								<i class="bi bi-instagram"> New Dawn Retreats</i>
+								className="btn text-muted">
+								<i className="bi bi-instagram"> New Dawn Retreats</i>
 							</a>
 						</div>
-						<div class="col-4 text-center">
-							<a href="mailto:jnlcarter5@gmail.com" class="btn text-muted mail">
+						<div className="col-4 text-center">
+							<a
+								href="mailto:jnlcarter5@gmail.com"
+								className="btn text-muted mail">
 								Website developed by Nathan Carter
 							</a>
 						</div>

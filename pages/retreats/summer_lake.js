@@ -29,17 +29,17 @@ export default function Summer_Lake() {
 			</Navbar>
 
 			<main className="container-fluid pr-0 mt-4">
-				<div class="row text-center">
-					<div class="contourBtm mt-3">
-						<h1 class="mb-5">Information for the Summer Lake Retreat</h1>
+				<div className="row text-center">
+					<div className="contourBtm mt-3">
+						<h1 className="mb-5">Information for the Summer Lake Retreat</h1>
 					</div>
 				</div>
-				<div class="row text-center align-items-center lowBright contourBtm">
-					<div class="col-lg-7 py-lg-5 pb-5 px-0">
-						<img src="/day.jpg" alt="" class="img-fluid" />
+				<div className="row text-center align-items-center lowBright contourBtm">
+					<div className="col-lg-7 py-lg-5 pb-5 px-0">
+						<img src="/day.jpg" alt="" className="img-fluid" />
 					</div>
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
-						<p class="my-0">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
+						<p className="my-0">
 							This sacred rest retreat will begin on the afternoon of May 12th
 							and complete mid-morning on May 15th upon morning checkout. Summer
 							Lake Hot Springs is a place of peace and reflection. This retreat
@@ -48,12 +48,12 @@ export default function Summer_Lake() {
 						</p>
 					</div>
 				</div>
-				<div class="row text-center align-items-center contourBtm">
-					<div class="col-lg-7 py-lg-5 px-0 pb-5 order-1 order-lg-2">
-						<img src="/snow.jpg" alt="" class="img-fluid" />
+				<div className="row text-center align-items-center contourBtm">
+					<div className="col-lg-7 py-lg-5 px-0 pb-5 order-1 order-lg-2">
+						<img src="/snow.jpg" alt="" className="img-fluid" />
 					</div>
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-centered order-2 order-lg-1">
-						<p class="my-0">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered order-2 order-lg-1">
+						<p className="my-0">
 							An invitation for healers and soul sisters - Come and find your
 							deep pause. Take sacred time for yourself, discover the gift of
 							stillness, and reconnect with Mother Earth. Give Away and Take in
@@ -63,12 +63,12 @@ export default function Summer_Lake() {
 						</p>
 					</div>
 				</div>
-				<div class="row text-center align-items-center contourBtm lowBright">
-					<div class="col-lg-7 py-lg-5 pb-5 px-0">
-						<img src="/sunset2.jpg" alt="" class="img-fluid" />
+				<div className="row text-center align-items-center contourBtm lowBright">
+					<div className="col-lg-7 py-lg-5 pb-5 px-0">
+						<img src="/sunset2.jpg" alt="" className="img-fluid" />
 					</div>
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-center">
-						<p class="my-0">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-center">
+						<p className="my-0">
 							You can choose from a variety of cabins on the property which best
 							suits your needs, however we do suggest if possible you bring a
 							friend who you can experience this time and place with. There are
@@ -77,12 +77,12 @@ export default function Summer_Lake() {
 						</p>
 					</div>
 				</div>
-				<div class="row text-center align-items-center contourBtm">
-					<div class="col-lg-7 py-lg-5 px-0 pb-5 order-1 order-lg-2">
-						<img src="/night.jpg" alt="" class="img-fluid" />
+				<div className="row text-center align-items-center contourBtm">
+					<div className="col-lg-7 py-lg-5 px-0 pb-5 order-1 order-lg-2">
+						<img src="/night.jpg" alt="" className="img-fluid" />
 					</div>
-					<div class="col-lg-5 px-5 py-lg-5 pb-5 text-center order-2 order-lg-1">
-						<p class="my-0">
+					<div className="col-lg-5 px-5 py-lg-5 pb-5 text-center order-2 order-lg-1">
+						<p className="my-0">
 							What to Expect: Morning and evening guided meditations
 							Opportunities for powerful self-inquiry and journaling. me for
 							self exploration and reflection. Drumming, sound therapy,
@@ -93,58 +93,69 @@ export default function Summer_Lake() {
 						</p>
 					</div>
 				</div>
-				<div class="row text-center align-items-center bigBright contourBtm">
-					<div class="col-10 col-lg-6 offset-lg-3 offset-1 px-lg-5 px-3 py-5 text-center">
+				<div className="row text-center align-items-center bigBright contourBtm">
+					<div className="col-10 col-lg-6 offset-lg-3 offset-1 px-lg-5 px-3 py-5 text-center">
 						<h2>Most Importantly</h2>
-						<p class="my-0">
+						<p className="my-0">
 							You have access to these sacred waters, 24/7. The three outside
 							pools are open to you anytime. Watch the sun rise and set or take
 							in the galaxy at night.
 						</p>
 					</div>
 				</div>
-				<div class="row text-center align-items-center lowBright my-0">
-					<div class="col-10 offset-1 py-5 text-centered">
-						<h2 class="my-0">Rates</h2>
+				<div className="row text-center align-items-center lowBright my-0">
+					<div className="col-10 offset-1 py-5 text-centered">
+						<h2 className="my-0">Rates</h2>
 					</div>
 				</div>
-				<div class="row text-center lowBright">
-					<div class="col-8 col-lg-3 offset-2 offset-lg-0 rate rate1">
-						<p class="">Single Shared Room</p>
-						<p>$600</p>
-					</div>
-					<div class="col-8 col-lg-3 offset-2 offset-lg-0 rate rate2">
-						<p class="">Single Private Room</p>
+				<div className="row text-center lowBright mb-5">
+					<div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate1">
+						<p className="mt-3">Single Shared Room</p>
 						<p>$750</p>
+						<a
+							href="https://buy.stripe.com/cN201n4NK6hiakM3ce"
+							className="btn btn-lg pinkBtn mb-3">
+							Sign Up
+						</a>
 					</div>
-					<div class="col-8 col-lg-3 offset-2 offset-lg-0 rate rate3">
-						<p class="">Double Private Room</p>
+					<div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate2">
+						<p className="mt-3">Single Private Room</p>
+						<p>$900</p>
+						<a
+							href="https://buy.stripe.com/8wM01ncgcaxyeB2bIJ"
+							className="btn btn-lg pinkBtn mb-3">
+							Sign Up
+						</a>
+					</div>
+					<div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate3">
+						<p className="mt-3">Double Private Room</p>
 						<p>$1500</p>
-					</div>
-				</div>
-				<div class="row text-center align-items-center lowBright py-5">
-					<div class="col-6 offset-3">
-						<a href="/retreats/summer_lake/signup" class="btn btn-lg pinkBtn">
+						<a
+							href="
+							https://buy.stripe.com/14k29v4NK0WY2Sk9AD"
+							className="btn btn-lg pinkBtn mb-3">
 							Sign Up
 						</a>
 					</div>
 				</div>
 			</main>
-			<footer class="footer py-3 mt-auto contourTop">
-				<div class=" container-fluid">
-					<div class="row">
-						<div class="col-4 text-center btn copyright">
-							<span class="text-muted">New Dawn Retreats 2022</span>
+			<footer className="footer py-3 mt-auto contourTop">
+				<div className=" container-fluid">
+					<div className="row">
+						<div className="col-4 text-center btn copyright">
+							<span className="text-muted">New Dawn Retreats 2022</span>
 						</div>
-						<div class="col-4 text-center">
+						<div className="col-4 text-center">
 							<a
 								href="https://www.instagram.com/newdawnretreats/"
-								class="btn text-muted">
-								<i class="bi bi-instagram"> New Dawn Retreats</i>
+								className="btn text-muted">
+								<i className="bi bi-instagram"> New Dawn Retreats</i>
 							</a>
 						</div>
-						<div class="col-4 text-center">
-							<a href="mailto:jnlcarter5@gmail.com" class="btn text-muted mail">
+						<div className="col-4 text-center">
+							<a
+								href="mailto:jnlcarter5@gmail.com"
+								className="btn text-muted mail">
 								Website developed by Nathan Carter
 							</a>
 						</div>

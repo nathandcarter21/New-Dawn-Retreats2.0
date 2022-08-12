@@ -30,15 +30,15 @@ export default function About() {
 			</Navbar>
 
 			<main className="container-fluid pr-0 mt-4">
-				<div class="row text-center">
-					<div class="contourBtm pb-5">
-						<h1 class="my-0">LISA CARTER LMT #5924</h1>
-						<h3 class="my-0 pt-3">INTUITIVE, EMPATH, HEALER</h3>
+				<div className="row text-center">
+					<div className="contourBtm pb-5">
+						<h1 className="my-0">LISA CARTER LMT #5924</h1>
+						<h3 className="my-0 pt-3">INTUITIVE, EMPATH, HEALER</h3>
 					</div>
 				</div>
-				<div class="row text-center align-items-center">
-					<div class="col-xl-6 offset-xl-0 py-5 px-4 px-lg-5 order-2 order-xl-1">
-						<p class="my-0">
+				<div className="row text-center align-items-center">
+					<div className="col-xl-6 offset-xl-0 py-5 px-4 px-lg-5 order-2 order-xl-1">
+						<p className="my-0">
 							My name is Lisa Carter. I have been a licensed massage therapist
 							for 24 years in Oregon. I am a mother of five and have been
 							studying the healing arts for most of my life. After a near-death
@@ -56,31 +56,33 @@ export default function About() {
 						</p>
 					</div>
 
-					<div class="col-xl-6 order-1 order-xl-2 py-xl-5 px-0">
-						<img src="/about.jpg" alt="Lisa Carter" class="img-fluid" />
+					<div className="col-xl-6 order-1 order-xl-2 py-xl-5 px-0">
+						<img src="/about.jpg" alt="Lisa Carter" className="img-fluid" />
 					</div>
 				</div>
-				<div class="col-6 offset-3 text-center">
-					<a href="/contact" class="btn pinkBtn btn-lg mb-5">
+				<div className="col-6 offset-3 text-center">
+					<a href="/contact" className="btn pinkBtn btn-lg mb-5">
 						Contact Me!
 					</a>
 				</div>
 			</main>
-			<footer class="footer py-3 mt-auto contourTop">
-				<div class=" container-fluid">
-					<div class="row">
-						<div class="col-4 text-center btn copyright">
-							<span class="text-muted">New Dawn Retreats 2022</span>
+			<footer className="footer py-3 mt-auto contourTop">
+				<div className=" container-fluid">
+					<div className="row">
+						<div className="col-4 text-center btn copyright">
+							<span className="text-muted">New Dawn Retreats 2022</span>
 						</div>
-						<div class="col-4 text-center">
+						<div className="col-4 text-center">
 							<a
 								href="https://www.instagram.com/newdawnretreats/"
-								class="btn text-muted">
-								<i class="bi bi-instagram"> New Dawn Retreats</i>
+								className="btn text-muted">
+								<i className="bi bi-instagram"> New Dawn Retreats</i>
 							</a>
 						</div>
-						<div class="col-4 text-center">
-							<a href="mailto:jnlcarter5@gmail.com" class="btn text-muted mail">
+						<div className="col-4 text-center">
+							<a
+								href="mailto:jnlcarter5@gmail.com"
+								className="btn text-muted mail">
 								Website developed by Nathan Carter
 							</a>
 						</div>
