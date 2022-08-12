@@ -19,7 +19,6 @@ function MyApp({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito&display=swap"
 					rel="stylesheet"
 				/>
-				<link rel="stylesheet" href="/globals.css" />
 			</Head>
 			<Layout>
 				<Component {...pageProps} />

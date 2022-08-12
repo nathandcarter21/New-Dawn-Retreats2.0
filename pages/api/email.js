@@ -33,17 +33,17 @@ export default async function handler(req, res) {
 					subject: "Message From Contact Page",
 					html: format,
 				});
-				res.redirect("/contact?success=true");
+				res.redirect(301, "/contact?success=true");
 				return;
 			} catch (e) {
-				res.redirect(307, "/contact?success=false");
+				res.redirect(301, "/contact?success=false");
 				return;
 			}
 		}
-		res.redirect(307, "/contact?success=false");
+		res.redirect(301, "/contact?success=false");
 		return;
 	} else {
-		res.redirect(307, "/contact");
+		res.redirect(301, "/contact");
 		return;
 	}
 }
