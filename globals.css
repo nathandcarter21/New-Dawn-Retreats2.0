@@ -41,7 +41,8 @@ input::-webkit-inner-spin-button {
 	border-radius: 2em;
 	transition: 0.6s;
 }
-.pinkBtn:hover {
+.pinkBtn:hover,
+.pinkBtn:active {
 	color: #b33d9e;
 	border-color: #b33d9e;
 }
