@@ -34,12 +34,16 @@ export default async function handler(req, res) {
 					html: format,
 				});
 				res.redirect("/contact?success=true");
+				return;
 			} catch (e) {
 				res.redirect(307, "/contact?success=false");
+				return;
 			}
 		}
 		res.redirect(307, "/contact?success=false");
+		return;
 	} else {
 		res.redirect(307, "/contact");
+		return;
 	}
 }
