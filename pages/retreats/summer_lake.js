@@ -65,7 +65,7 @@ export default function Summer_Lake() {
 						offerings *You are welcome to bring a musical instrument or offering
 						that would enrich these honored practices. A delicious meal will be
 						provided nightly and shared together at the Healing house followed
-						by a fire ceremony. //more
+						by a fire ceremony.
 					</p>
 				</div>
 			</div>

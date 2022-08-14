@@ -57,11 +57,19 @@ input::-webkit-inner-spin-button {
 	color: #eb5e6c;
 	border-color: #eb5e6c;
 }
+.contactAlert {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
 h1,
 h2,
 h3,
-h4 {
+h4,
+.brownLink,
+.brownLink:hover {
 	color: #927b68;
+	text-decoration: none;
 }
 p {
 	font-size: x-large;
@@ -86,7 +94,8 @@ a.navbar-link {
 	font-size: medium;
 }
 
-.flash {
+.flash,
+.other {
 	width: 50%;
 	margin-left: 25%;
 }
@@ -97,8 +106,10 @@ a.navbar-link {
 
 .footer {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .footer a {
 	text-decoration: none;
@@ -107,6 +118,12 @@ a.navbar-link {
 	text-decoration: underline;
 }
 
+@media screen and (max-width: 500px) {
+	.other {
+		width: 90%;
+		margin: auto;
+	}
+}
 @media screen and (min-width: 992px) {
 	.rate1 {
 		margin-left: 5.67%;

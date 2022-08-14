@@ -1,7 +1,7 @@
-import "bootstrap/dist/css/bootstrap.css";
-import Layout from "../components/Layout";
-import "../globals.css";
 import Head from "next/head";
+import Layout from "../components/Layout";
+import "bootstrap/dist/css/bootstrap.css";
+import "../globals.css";
 
 function MyApp({ Component, pageProps }) {
 	return (

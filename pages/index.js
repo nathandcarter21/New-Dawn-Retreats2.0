@@ -1,8 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Container } from "react-bootstrap";
-import Navbar from "../components/PageNavbar";
-
 export default function Home() {
 	return (
 		<main className="container-fluid pr-0 mt-4">
