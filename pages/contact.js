@@ -2,9 +2,11 @@ import { Form } from "react-bootstrap";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Flash from "../components/Flash";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
 	const [validated, setValidated] = useState(false);
+	const [bot, setBot] = useState(true);
 
 	const handleSubmit = async (event) => {
 		const form = event.currentTarget;
@@ -14,6 +16,9 @@ export default function Contact() {
 		}
 
 		setValidated(true);
+	};
+	const handleOnChange = (value) => {
+		setBot(false);
 	};
 	const router = useRouter();
 	let { success } = router.query;
@@ -61,8 +66,16 @@ export default function Contact() {
 							</Form.Control.Feedback>
 						</Form.Group>
 
-						<div className="text-center mb-3">
-							<button type="submit" className="btn btn-lg pinkBtn submit">
+						<div className="text-center mb-3 d-flex align-items-center flex-column">
+							<ReCAPTCHA
+								sitekey="6Lc3VYAhAAAAAMiElKiAdWj1J9FWtXur5yIxxIQ6"
+								onChange={handleOnChange}
+								className="mb-3"
+							/>
+							<button
+								type="submit"
+								className="btn btn-lg pinkBtn submit"
+								disabled={bot}>
 								Send Message
 							</button>
 						</div>
