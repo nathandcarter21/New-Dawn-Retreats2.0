@@ -49,7 +49,8 @@ input::-webkit-inner-spin-button {
 	transition: 0.6s;
 }
 .pinkBtn:hover,
-.pinkBtn:active {
+.pinkBtn:active,
+.pinkBtn:focus {
 	color: #b33d9e;
 	border-color: #b33d9e;
 }
