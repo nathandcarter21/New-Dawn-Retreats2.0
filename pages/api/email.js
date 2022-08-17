@@ -4,7 +4,8 @@ export default async function handler(req, res) {
 	if (req.method === "POST") {
 		const { name, email, message } = req.body;
 		if (name && email && message) {
-			if (name == "CrytoCal") {
+			console.log(name);
+			if (name === "CryptoCal") {
 				res.redirect(301, "/contact?success=true");
 				return;
 			}

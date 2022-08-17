@@ -4,7 +4,7 @@ const Flash = ({ success }) => {
 	if (success === "true") {
 		return (
 			<Alert variant="success" className="contactAlert mb-3">
-				Thank you for sending a message to out team at New Dawn Retreats!
+				Thank you for sending a message to our team at New Dawn Retreats!
 			</Alert>
 		);
 	}
