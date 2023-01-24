@@ -14,10 +14,10 @@ export default function Retreats() {
 				<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
 					<h2 className="my-0">Summerlake Hotsprings Retreat</h2>
 					<p className="my-0 my-3">
-						Women: September 22 - 30, 2023
+						Women: tbd
 					</p>
 					<p className="my-0 my-3">
-						Men: September 22 - 30, 2023
+						Men: tbd
 					</p>
 					<a href="/retreats/summer_lake" className="btn pinkBtn btn-lg">
 						View Details
@@ -29,7 +29,7 @@ export default function Retreats() {
 				<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered order-2 order-lg-1">
 					<h2 className="my-0">Sacred Rest Mexico 2023</h2>
 					<p className="my-0 my-3">
-						Women: February 21 - 28, 2023
+						Women: tbd
 					</p>
 					<a href="/retreats/mexico" className="btn pinkBtn btn-lg">View Details</a>
 				</div>

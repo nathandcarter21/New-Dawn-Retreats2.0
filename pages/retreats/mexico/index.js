@@ -84,7 +84,7 @@ export default function Summer_Lake() {
             <div className="row text-center lowBright mb-5">
                 <div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate1">
                     <p className="mt-3">Single Shared Room</p>
-                    <p>$750</p>
+                    <p>tbd</p>
                     <a
                         href="mexico/single"
                         className="btn btn-lg pinkBtn mb-3">
@@ -93,7 +93,7 @@ export default function Summer_Lake() {
                 </div>
                 <div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate2">
                     <p className="mt-3">Single Private Room</p>
-                    <p>$900</p>
+                    <p>tbd</p>
                     <a
                         href="mexico/singlePrivate"
                         className="btn btn-lg pinkBtn mb-3">
@@ -102,7 +102,7 @@ export default function Summer_Lake() {
                 </div>
                 <div className="col-8 col-lg-3 offset-2 offset-lg-0 rate rate3">
                     <p className="mt-3">Double Private Room</p>
-                    <p>$1500</p>
+                    <p>tbd</p>
                     <a
                         href="mexico/double"
                         className="btn btn-lg pinkBtn mb-3">
