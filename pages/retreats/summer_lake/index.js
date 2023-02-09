@@ -1,7 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Nav, Navbar, Container } from "react-bootstrap";
-
 export default function Summer_Lake() {
     return (
         <main className="container-fluid pr-0 mt-4">

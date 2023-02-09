@@ -1,4 +1,4 @@
-import { Form } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Flash from "../../../components/Flash";
