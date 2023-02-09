@@ -48,6 +48,9 @@ export default function Contact() {
 							</Form.Control.Feedback>
 						</Form.Group>
 
+						<input type="hidden" name="src" value="contact" />
+
+
 						<Form.Group className="mb-3">
 							<Form.Label>Email Address</Form.Label>
 							<Form.Control type="email" name="email" required />

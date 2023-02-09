@@ -51,7 +51,7 @@ export default function Summer_Lake() {
                         </Form.Group>
 
                         <input type="hidden" name="roomType" value="single" />
-                        <input type="hidden" name="dest" value="mexico" />
+                        <input type="hidden" name="src" value="mexico" />
 
                         <Form.Group className="mb-3">
                             <Form.Label>Email Address</Form.Label>
