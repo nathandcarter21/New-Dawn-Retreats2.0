@@ -70,15 +70,16 @@ export default function Contact() {
 						</Form.Group>
 
 						<div className="text-center mb-3 d-flex align-items-center flex-column">
-							<ReCAPTCHA
+							{/* <ReCAPTCHA
 								sitekey="6Lc3VYAhAAAAAMiElKiAdWj1J9FWtXur5yIxxIQ6"
 								onChange={handleOnChange}
 								className="mb-3"
-							/>
+							/> */}
 							<button
 								type="submit"
 								className="btn btn-lg pinkBtn submit"
-								disabled={bot}>
+							// disabled={bot}
+							>
 								Send Message
 							</button>
 						</div>
