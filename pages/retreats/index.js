@@ -18,7 +18,7 @@ export default function Retreats() {
 				<div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
 					<h2 className="my-0">Sacred Rest Mexico 2023</h2>
 					<p className="my-0 my-3">
-						Women: tbd
+						Women: Feb 11th 2023
 					</p>
 					<a href="/retreats/mexico" className="btn pinkBtn btn-lg">View Details</a>
 				</div>
