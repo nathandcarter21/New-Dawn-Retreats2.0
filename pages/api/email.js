@@ -46,19 +46,23 @@ const handleContactEmail = async (req, res, transporter) => {
 
 const handleMexicoApplicationEmail = async (req, res, transporter) => {
 
-	const handleRedirect = (roomType) => {
+	const handleRedirect = (roomType, valid) => {
+		if (!valid) {
+			res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
+			return;
+		}
 		switch (roomType) {
 			case 'single':
-				res.redirect(301, "https://buy.stripe.com/cN201n4NK6hiakM3ce");
+				res.redirect(301, "https://buy.stripe.com/test_aEUbJ8b6l9B99pu7sv");
 				break;
-			case 'singlePrivate':
+			case 'spa':
 				res.redirect(301, "https://buy.stripe.com/8wM01ncgcaxyeB2bIJ");
 				break;
 			case 'double':
 				res.redirect(301, "https://buy.stripe.com/14k29v4NK0WY2Sk9AD");
 				break;
 			default:
-				res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
+				res.redirect(301, `/retreats/mexico/${roomType}`);
 				break;
 		}
 		return;
@@ -100,10 +104,10 @@ const handleMexicoApplicationEmail = async (req, res, transporter) => {
 			html: format,
 		});
 
-		handleRedirect(roomType);
+		handleRedirect(roomType, true);
 	}
 	catch (e) {
-		handleRedirect(roomType);
+		handleRedirect(roomType, false);
 	}
 }
 
@@ -130,7 +134,7 @@ export default async function handler(req, res) {
 		case 'single':
 			handleMexicoApplicationEmail(req, res, transporter);
 			break;
-		case 'singlePrivate':
+		case 'spa':
 			handleMexicoApplicationEmail(req, res, transporter);
 			break;
 		case 'double':

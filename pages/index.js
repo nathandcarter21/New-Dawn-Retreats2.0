@@ -3,13 +3,13 @@ export default function Home() {
 		<main className="container-fluid pr-0 mt-4">
 			<div className="row text-center">
 				<div className="contourBtm pb-5">
-					<h1 className="my-0">Summer Lake Hot Springs Retreat</h1>
+					<h1 className="my-0">New Dawn Retreats</h1>
 					<h2 className="mt-2">~Sacred Rest~</h2>
 				</div>
 			</div>
 			<div className="row text-center align-items-center contourBtm">
 				<div className="col-md-7 py-md-5 px-0">
-					<img src="/sunset1.jpg" alt="" className="img-fluid" />
+					<img src="/yoga.jpeg" alt="" className="img-fluid" />
 				</div>
 				<div className="col-md-5 px-5 py-5 text-centered">
 					<p className="my-0">
@@ -35,7 +35,7 @@ export default function Home() {
 				</div>
 
 				<div className="col-md-7 px-0 py-md-5 order-1 order-md-2">
-					<img src="/sunset3.jpg" alt="" className="img-fluid" />
+					<img src="/sunset1.jpg" alt="" className="img-fluid" />
 				</div>
 			</div>
 

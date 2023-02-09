@@ -50,7 +50,7 @@ export default function Summer_Lake() {
                             </Form.Control.Feedback>
                         </Form.Group>
 
-                        <input type="hidden" name="roomType" value="singlePrivate" />
+                        <input type="hidden" name="roomType" value="spa" />
                         <input type="hidden" name="dest" value="mexico" />
 
                         <Form.Group className="mb-3">
@@ -90,7 +90,7 @@ export default function Summer_Lake() {
                                 type="submit"
                                 className="btn btn-lg pinkBtn submit"
                                 disabled={bot}>
-                                Send Message
+                                Continue
                             </button>
                         </div>
                     </Form>
@@ -98,24 +98,6 @@ export default function Summer_Lake() {
             </div>
 
             <Flash success={success} />
-
-            <div className="other">
-                <h3 className="text-center">You can also reach us at...</h3>
-                <ul>
-                    <li>
-                        Email:{" "}
-                        <a href="mailto:lisadawncarter313@gmail.com" className="brownLink">
-                            lisadawncarter313@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        Phone:{" "}
-                        <a href="tel:5419440768" className="brownLink">
-                            (541) 944-0768
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </main>
     );
 }
