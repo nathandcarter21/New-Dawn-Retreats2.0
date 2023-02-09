@@ -8,14 +8,15 @@ export default function Summer_Lake() {
                 </div>
             </div>
             <div className="row text-center align-items-center lowBright contourBtm">
-                <div className="col-lg-7 py-lg-5 pb-5 px-0">
-                    <img src="/beachSunset2.jpg" alt="" className="img-fluid" />
-                    <div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
+                <div className="row text-center align-items-center lowBright">
+                    <div className="col-lg-7 py-lg-5 pb-5 px-0">
+                        <img src="/beachSunset2.jpg" alt="" className="img-fluid" />
                     </div>
-                    <p className="my-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error officiis, laudantium similique esse nemo quam molestiae asperiores earum ad eum nulla consectetur pariatur voluptates deserunt repudiandae temporibus fugit blanditiis voluptate.
-                        Quos sequi aspernatur distinctio? Debitis quo saepe accusamus ad magnam officiis, cumque ut, repellendus dolore nesciunt quia odio praesentium aliquid architecto voluptatem sint natus, consequatur ipsam! Suscipit repellat nostrum earum?
-                    </p>
+                    <div className="col-lg-5 px-5 py-lg-5 pb-5 text-center">
+                        <p className="my-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto autem fuga nostrum, molestias incidunt perspiciatis. Eveniet modi ipsa aliquid exercitationem. Necessitatibus asperiores nulla in dicta quis inventore omnis error consequatur.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="row text-center align-items-center contourBtm">
@@ -68,7 +69,7 @@ export default function Summer_Lake() {
                     <p className="mt-3">Single</p>
                     <p>$600 w/o airfair</p>
                     <a
-                        href="mexico/single"
+                        href="https://buy.stripe.com/8wMbK54NKcFG64wdQU"
                         className="btn btn-lg pinkBtn mb-3">
                         Sign Up
                     </a>
@@ -77,7 +78,8 @@ export default function Summer_Lake() {
                     <p className="mt-3">Double</p>
                     <p>$1100 w/o airfair</p>
                     <a
-                        href="mexico/double"
+                        href="https://buy.stripe.com/5kA9BXfso8pqfF6cMR"
+
                         className="btn btn-lg pinkBtn mb-3">
                         Sign Up
                     </a>
@@ -87,7 +89,7 @@ export default function Summer_Lake() {
                     <p>$200</p>
                     <p>Includes massages and salt scrubs</p>
                     <a
-                        href="mexico/spa"
+                        href="https://buy.stripe.com/dR6eWh2FC356eB214a"
                         className="btn btn-lg pinkBtn mb-3">
                         Sign Up
                     </a>
