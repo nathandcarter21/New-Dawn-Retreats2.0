@@ -147,7 +147,7 @@ export default async function handler(req, res) {
 				html: format,
 			});
 
-			res.redirect(301, "/contact?success=true");
+			res.redirect(307, "/contact?success=true");
 			return;
 		}
 		catch (e) {
@@ -208,7 +208,7 @@ export default async function handler(req, res) {
 		}
 		catch (e) {
 			console.log(e)
-			res.redirect(301, `/retreats/mexico/${roomType}`);
+			res.redirect(307, `/retreats/mexico/${roomType}`);
 			return;
 		}
 	}
