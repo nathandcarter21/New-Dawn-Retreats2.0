@@ -4,13 +4,7 @@ const handleContactEmail = async (req, res, transporter) => {
 	const { name, email, message } = req.body;
 
 	if (name === undefined || email === undefined || message === undefined) {
-
-		res.redirect(301, "/contact?success=false");
-		return;
-	}
-
-	if (name === "CrytoCal" || name === "CrytoCalCal") {
-		res.redirect(301, "/contact?success=true");
+		res.status(500).send({ error: 'failed to fetch data' });
 		return;
 	}
 
@@ -34,11 +28,12 @@ const handleContactEmail = async (req, res, transporter) => {
 			html: format,
 		});
 
-		res.redirect(301, "/contact?success=true");
+		res.status(500).send({ error: 'success' });
+		// res.redirect(301, "/contact?success=true");
 		return;
 	}
 	catch (e) {
-		res.redirect(301, "/contact?success=false");
+		res.status(500).send({ error: 'failed to fetch data' });
 		return;
 	}
 }
@@ -103,7 +98,7 @@ const handleMexicoApplicationEmail = async (req, res, transporter) => {
 		handleRedirect(roomType);
 	}
 	catch (e) {
-		res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
+		handleRedirect(roomType);
 		return;
 	}
 }
@@ -125,15 +120,12 @@ export default async function handler(req, res) {
 		},
 	});
 
-	const { dest } = req.body;
-
-	switch (dest) {
-		case 'mexico':
-			handleMexicoApplicationEmail(req, res, transporter);
-			break;
-		default:
-			handleContactEmail(req, res, transporter);
-			break;
-	}
+	// const { dest } = req.body;
+	// console.log(dest)
+	// if (dest === 'mexico') {
+	// handleMexicoApplicationEmail(req, res, transporter);
+	// } else {
+	handleContactEmail(req, res, transporter);
+	// }
 	return;
 }
