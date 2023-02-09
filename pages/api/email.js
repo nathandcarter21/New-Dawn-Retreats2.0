@@ -105,59 +105,55 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
 
-	res.redirect(301, "/retreats/mexico/success");
-	return;
+	if (req.method !== "POST") {
+		res.redirect(301, "/contact");
+		return;
+	}
 
-	// if (req.method !== "POST") {
-	// 	res.redirect(301, "/contact");
-	// 	return;
-	// }
+	let transporter = nodemailer.createTransport({
+		host: "smtp-mail.outlook.com",
+		port: 587,
+		secure: false,
+		auth: {
+			user: process.env.EMAIL_USER,
+			pass: process.env.EMAIL_PASSWORD,
+		},
+	});
 
-	// let transporter = nodemailer.createTransport({
-	// 	host: "smtp-mail.outlook.com",
-	// 	port: 587,
-	// 	secure: false,
-	// 	auth: {
-	// 		user: process.env.EMAIL_USER,
-	// 		pass: process.env.EMAIL_PASSWORD,
-	// 	},
-	// });
+	const { name, email, message } = req.body;
+	if (name === undefined || email === undefined || message === undefined) {
+		res.redirect(301, "/contact?success=false");
+		return;
+	}
 
-	// const { name, email, phone, message, src, roomType } = req.body;
-	// if (src === 'contact') {
-	// 	if (name === undefined || email === undefined || message === undefined) {
-	// 		res.redirect(301, "/contact?success=false");
-	// 		return;
-	// 	}
+	try {
+		const format = `
+					<p>
+					Name: ${name}
+					</p>
+					<p>
+					Email: ${email}
+					</p>
+					<p>
+					Message: ${message}
+					</p>
+					`;
 
-	// 	try {
-	// 		const format = `
-	// 				<p>
-	// 				Name: ${name}
-	// 				</p>
-	// 				<p>
-	// 				Email: ${email}
-	// 				</p>
-	// 				<p>
-	// 				Message: ${message}
-	// 				</p>
-	// 				`;
+		let info = await transporter.sendMail({
+			from: `'New Dawn Retreat's Website' <${process.env.EMAIL_USER}>`,
+			to: process.env.EMAIL_RECIPIENT,
+			subject: "Message From Contact Page",
+			html: format,
+		});
 
-	// 		let info = await transporter.sendMail({
-	// 			from: `'New Dawn Retreat's Website' <${process.env.EMAIL_USER}>`,
-	// 			to: process.env.EMAIL_RECIPIENT,
-	// 			subject: "Message From Contact Page",
-	// 			html: format,
-	// 		});
+		res.redirect(307, "/contact?success=true");
+		return;
+	}
+	catch (e) {
+		res.redirect(307, "/contact?success=false");
+		return;
+	}
 
-	// 		res.redirect(307, "/contact?success=true");
-	// 		return;
-	// 	}
-	// 	catch (e) {
-	// 		res.status(500).send({ error: 'failed to fetch data' });
-	// 		return;
-	// 	}
-	// }
 	// else if (src === 'mexico') {
 	// 	if (name === undefined || email === undefined || phone === undefined || message === undefined) {
 	// 		res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
