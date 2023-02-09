@@ -46,20 +46,16 @@ const handleContactEmail = async (req, res, transporter) => {
 
 const handleMexicoApplicationEmail = async (req, res, transporter) => {
 
-	const handleRedirect = (roomType, valid) => {
-		if (!valid) {
-			res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
-			return;
-		}
+	const handleRedirect = (roomType) => {
 		switch (roomType) {
 			case 'single':
-				res.redirect(301, "https://buy.stripe.com/test_aEUbJ8b6l9B99pu7sv");
+				res.redirect(301, "https://buy.stripe.com/8wMbK54NKcFG64wdQU");
 				break;
 			case 'spa':
-				res.redirect(301, "https://buy.stripe.com/8wM01ncgcaxyeB2bIJ");
+				res.redirect(301, "https://buy.stripe.com/dR6eWh2FC356eB214a");
 				break;
 			case 'double':
-				res.redirect(301, "https://buy.stripe.com/14k29v4NK0WY2Sk9AD");
+				res.redirect(301, "https://buy.stripe.com/5kA9BXfso8pqfF6cMR");
 				break;
 			default:
 				res.redirect(301, `/retreats/mexico/${roomType}`);
@@ -70,7 +66,7 @@ const handleMexicoApplicationEmail = async (req, res, transporter) => {
 
 	const { name, email, phone, message, dest, roomType } = req.body;
 
-	if (name === undefined || email === undefined || phone === undefined || message === undefined || roomType === undefined) {
+	if (name === undefined || email === undefined || phone === undefined || message === undefined) {
 		res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
 		return;
 	}
@@ -104,10 +100,11 @@ const handleMexicoApplicationEmail = async (req, res, transporter) => {
 			html: format,
 		});
 
-		handleRedirect(roomType, true);
+		handleRedirect(roomType);
 	}
 	catch (e) {
-		handleRedirect(roomType, false);
+		res.redirect(301, `/retreats/mexico/${roomType}?success=false`);
+		return;
 	}
 }
 
@@ -128,16 +125,10 @@ export default async function handler(req, res) {
 		},
 	});
 
-	const { roomType } = req.body;
+	const { dest } = req.body;
 
-	switch (roomType) {
-		case 'single':
-			handleMexicoApplicationEmail(req, res, transporter);
-			break;
-		case 'spa':
-			handleMexicoApplicationEmail(req, res, transporter);
-			break;
-		case 'double':
+	switch (dest) {
+		case 'mexico':
 			handleMexicoApplicationEmail(req, res, transporter);
 			break;
 		default:

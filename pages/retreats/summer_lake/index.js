@@ -90,7 +90,9 @@ export default function Summer_Lake() {
                     <p>$750</p>
                     <a
                         href="summer_lake/single"
-                        className="btn btn-lg pinkBtn mb-3">
+                        className="btn btn-lg pinkBtn mb-3"
+                        hidden
+                    >
                         Sign Up
                     </a>
                 </div>
@@ -99,7 +101,9 @@ export default function Summer_Lake() {
                     <p>$900</p>
                     <a
                         href="summer_lake/singlePrivate"
-                        className="btn btn-lg pinkBtn mb-3">
+                        className="btn btn-lg pinkBtn mb-3"
+                        hidden
+                    >
                         Sign Up
                     </a>
                 </div>
@@ -108,7 +112,9 @@ export default function Summer_Lake() {
                     <p>$1500</p>
                     <a
                         href="summer_lake/double"
-                        className="btn btn-lg pinkBtn mb-3">
+                        className="btn btn-lg pinkBtn mb-3"
+                        hidden
+                    >
                         Sign Up
                     </a>
                 </div>
