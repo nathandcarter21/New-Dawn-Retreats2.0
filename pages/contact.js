@@ -5,34 +5,34 @@ import Flash from "../components/Flash";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
-	const [validated, setValidated] = useState(false);
-	const [bot, setBot] = useState(true);
+  const [validated, setValidated] = useState(false);
+  const [bot, setBot] = useState(true);
 
-	const handleSubmit = async (event) => {
-		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-		}
+  const handleSubmit = async (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
-		setValidated(true);
-	};
-	const handleOnChange = (value) => {
-		setBot(false);
-	};
-	const router = useRouter();
-	let { success } = router.query;
+    setValidated(true);
+  };
+  const handleOnChange = (value) => {
+    setBot(false);
+  };
+  const router = useRouter();
+  let { success } = router.query;
 
-	return (
-		<main className="container-fluid pr-0 mt-4">
-			<div className="row">
-				<div className="col-8 offset-2 text-center">
-					<h1>Send Us A Message!</h1>
-				</div>
-			</div>
-			<div className="row">
-				<div className="col-8 offset-2 col-lg-6 offset-lg-3">
-					<Form
+  return (
+    <main className="container-fluid pr-0 mt-4">
+      <div className="row">
+        <div className="col-8 offset-2 text-center">
+          <h1>Send Us A Message!</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-8 offset-2 col-lg-6 offset-lg-3">
+          {/* <Form
 						noValidate
 						validated={validated}
 						onSubmit={handleSubmit}
@@ -82,27 +82,27 @@ export default function Contact() {
 								Send Message
 							</button>
 						</div>
-					</Form>
-				</div>
-			</div>
-			<Flash success={success} />
-			<div className="other">
-				<h3 className="text-center">You can also reach us at...</h3>
-				<ul>
-					<li>
-						Email:{" "}
-						<a href="mailto:lisadawncarter313@gmail.com" className="brownLink">
-							lisadawncarter313@gmail.com
-						</a>
-					</li>
-					<li>
-						Phone:{" "}
-						<a href="tel:5419440768" className="brownLink">
-							(541) 944-0768
-						</a>
-					</li>
-				</ul>
-			</div>
-		</main>
-	);
+					</Form> */}
+        </div>
+      </div>
+      <Flash success={success} />
+      <div className="other">
+        {/* <h3 className="text-center">You can also reach us at...</h3> */}
+        <ul>
+          <li>
+            Email:{" "}
+            <a href="mailto:lisadawncarter313@gmail.com" className="brownLink">
+              lisadawncarter313@gmail.com
+            </a>
+          </li>
+          <li>
+            Phone:{" "}
+            <a href="tel:5419440768" className="brownLink">
+              (541) 944-0768
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  );
 }
