@@ -27,7 +27,7 @@ export default function Contact() {
     <main className="container-fluid pr-0 mt-4">
       <div className="row">
         <div className="col-8 offset-2 text-center">
-          <h1>Send Us A Message!</h1>
+          <h1>Send Me A Message!</h1>
         </div>
       </div>
       <div className="row">
