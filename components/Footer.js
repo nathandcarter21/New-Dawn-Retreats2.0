@@ -21,11 +21,11 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="footDiv text-center">
+      {/* <div className="footDiv text-center">
         <a href="mailto:jnlcarter5@gmail.com" className="text-muted">
           Website developed by Nathan Carter
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 };
