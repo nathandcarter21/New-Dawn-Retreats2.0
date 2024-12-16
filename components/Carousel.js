@@ -33,7 +33,13 @@ function CarouselComponent() {
         <img className="d-block w-100" src="/room.png" alt="8th slide" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src="/kitchen.png" alt="Seventh slide" />
+        <img className="d-block w-100" src="/kitchen.png" alt="9th slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src="/break.png" alt="10th slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src="/fast.png" alt="11th slide" />
       </Carousel.Item>
       {/* <Carousel.Item>
         <img className="d-block w-100" src="/cave.jpg" alt="Third slide" />
