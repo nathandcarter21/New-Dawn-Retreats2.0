@@ -32,9 +32,10 @@ export default function Summer_Lake() {
                 Somatic movement and ceremonial circle dancing and singing
               </li>
               <li>Daily mediations Journal prompts </li>
+              <li>One-on-one coaching</li>
               <li>
-                One on one coaching Ceremonial sweat lodge led by a local Toltec
-                Shaman in Tronconnes
+                Ceremonial sweat lodge led by a local Toltec Shaman in
+                Tronconnes
               </li>
               <li> Estuary Kayak tour and birdwatching</li>
               <li>Cave hike to local Cave of Majahua led by Costa Nativa</li>
@@ -72,7 +73,7 @@ export default function Summer_Lake() {
           <p className="my-0">Space is limited to 8 approved guests.</p>
           <p></p>
           <p className="my-0">
-            Book by Dec 25 to receive discounted rate $250 non refundable
+            Book by December 31st to receive discounted rate $150 non refundable
             deposit requires{" "}
           </p>
           <p></p>
@@ -156,6 +157,7 @@ export default function Summer_Lake() {
           <p></p>
           <p className="my-0">Featuring Terra McDonald LMT 20082 </p>
           <p> Co-Creator</p>
+          <p>Please reach out to one of us for further details</p>
           <a href="/about" className="btn pinkBtn btn-lg">
             See About Info
           </a>

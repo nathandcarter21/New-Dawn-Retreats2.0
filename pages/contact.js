@@ -27,7 +27,11 @@ export default function Contact() {
     <main className="container-fluid pr-0 mt-4">
       <div className="row">
         <div className="col-8 offset-2 text-center">
-          <h1>Send Me A Message!</h1>
+          <h2>Contact one of us for further details prior to registration</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <h4>Lisa Carter</h4>
         </div>
       </div>
       <div className="row">
@@ -99,6 +103,28 @@ export default function Contact() {
             Phone:{" "}
             <a href="tel:5419440768" className="brownLink">
               (541) 944-0768
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="row">
+        <div className="col-8 offset-2 text-center">
+          <h4>Terra McDonald</h4>
+        </div>
+      </div>
+      <div className="other">
+        {/* <h3 className="text-center">You can also reach us at...</h3> */}
+        <ul>
+          <li>
+            Email:{" "}
+            <a href="mailto:Terra@corecranial.com" className="brownLink">
+              Terra@corecranial.com{" "}
+            </a>
+          </li>
+          <li>
+            Phone:{" "}
+            <a href="tel:5418803644" className="brownLink">
+              (541) 880-3644
             </a>
           </li>
         </ul>

@@ -13,7 +13,7 @@ export default function Retreats() {
         </div>
         <div className="col-lg-5 px-5 py-lg-5 pb-5 text-centered">
           <h2 className="my-0">Sacred Rest Mexico</h2>
-          <p className="my-0 my-3">Febuary 2nd - 7th, 2025</p>
+          <p className="my-0 my-3">February 2nd - 7th, 2025</p>
           <p className="my-0 my-3">In Beautiful Tronconnes Mexico</p>
           <p className="my-0 my-3">
             Hosted by Lisa Carter LMT 5924 Retreat Facilitator
