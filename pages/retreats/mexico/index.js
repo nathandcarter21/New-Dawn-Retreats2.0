@@ -73,9 +73,10 @@ export default function Summer_Lake() {
           <p className="my-0">Space is limited to 8 approved guests.</p>
           <p></p>
           <p className="my-0">
-            Book by December 31st to receive discounted rate $150 non refundable
-            deposit requires{" "}
+            Book by December 31st to receive $150 discounted rate
           </p>
+          <p></p>
+          <p className="my-0">$250 non-refundable deposit</p>
           <p></p>
           {/* <p className="my-0">
             Airfare not included Total retreat cost $1500.00
